@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title>Random Joke Generator</title>
+ <link rel="stylesheet" href="user.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+   <div class="head">
+<h1>Welcome, Buddy! Have Some Fun!! &#128536;&#128587;</h1>
+ <button class="logout" routerLink="">Log Out</button>
+</div>
+
+ <button class="jokes" (click)="generateJoke()">Get Jokes</button>
+
+<div class="generate">
+<div class="joke-display">
+  <p class="para">{{ joke.setup }} {{ joke.punchline }}</p>
+</div>
+<button id="likeBtn" (click)="likeJoke()">👍LIKE</button>
+   <span id="heartEmoji" class="hidden" *ngIf="liked">💙</span></div>
+</div>
+
+
+</body>
+</html>

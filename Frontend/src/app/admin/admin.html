@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-heading">
+    <h2 >Welcome, Admin! Here is Your User Database 👇</h2>
+    <button routerLink="/user" class="up">Go To User Page</button>
+    <button routerLink="" class="logout">Log Out</button>
+</div>
+    <div class="admin-container">
+ <h1 class="user">User List</h1>
+
+  <div class="table-container">
+    <div class="table-header">
+      <span class="column">Name</span>
+      <span class="column">Email</span>
+      <span class="column">Password</span>
+    </div>
+
+    <div class="table-row" *ngFor="let u of user">
+      <span class="column">{{ u.name }}</span>
+      <span class="column">{{ u.email }}</span>
+      <span class="column">{{ u.password }}</span>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+<!--ul>  
+         <li *ngFor="let u of user">{{ u.name }} ({{ u.email }})   
+</li> </ul--> 
