@@ -55,7 +55,7 @@ A full-stack Random Jokes Generator platform built with the MEAN stack (MongoDB,
 
 The project follows a clean and modular architecture:
 
-Frontend
+Frontend/myapp/
 ├── src/
 |    ├──app/                # Reusable UI components
 |    |   ├──app.routes.ts   # Define application routes
@@ -64,13 +64,13 @@ Frontend
 |    |   ├──guards/         # Authentication & Authorization
 |    |   ├──services/       # Services for API calls, authentication
 |    |   ├──interceptors/   # Add JWT authentication to the request
-|    |   ├──environments/   # Store API endpoints 
 |    |   ├──home/           # Landing Page
 |    |   ├──signup/         # User registration form
 |    |   ├──login/          # User login form with authentication
 |    |   ├──user/           # Platform to display jokes and like them
 |    |   ├──admin/          # Access to user database
 |    ├──styles.css          # Global styles
+|    ├──environments/       # Store API endpoints
 ├──angular.json             # Angular CLI configuration
 ├──package.json             # Project dependencies and scripts
 ├──tsconfig.json            # TypeScript configuration
