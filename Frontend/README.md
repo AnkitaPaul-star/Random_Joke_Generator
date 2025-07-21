@@ -55,26 +55,27 @@ A full-stack Random Jokes Generator platform built with the MEAN stack (MongoDB,
 
 The project follows a clean and modular architecture:
 
-Frontend/myapp/
+Frontend
 ├── src/
-     ├──app/                # Reusable UI components
-     |   ├──app.routes.ts   # Define application routes
-     |   ├──app.config.ts   # Import providers
-     |   ├──app.ts          # Entry point of the Angular app          
-     |   ├──guards/         # Authentication & Authorization
-     |   ├──services/       # Services for API calls, authentication
-     |   ├──interceptors/   # Add JWT authentication to the request
-     |   ├──environments/   # Store API endpoints 
-     |   ├──home/           # Landing Page
-     |   ├──signup/         # User registration form
-     |   ├──login/          # User login form with authentication
-     |   ├──user/           # Platform to display jokes and like them
-     |   ├──admin/          # Access to user database
-     ├──styles.css          # Global styles
-     ├──angular.json        # Angular CLI configuration
-     ├──package.json        # Project dependencies and scripts
-     ├──tsconfig.json       # TypeScript configuration
-     ├──README.md           # This file
+|    ├──app/                # Reusable UI components
+|    |   ├──app.routes.ts   # Define application routes
+|    |   ├──app.config.ts   # Import providers
+|    |   ├──app.ts          # Entry point of the Angular app          
+|    |   ├──guards/         # Authentication & Authorization
+|    |   ├──services/       # Services for API calls, authentication
+|    |   ├──interceptors/   # Add JWT authentication to the request
+|    |   ├──environments/   # Store API endpoints 
+|    |   ├──home/           # Landing Page
+|    |   ├──signup/         # User registration form
+|    |   ├──login/          # User login form with authentication
+|    |   ├──user/           # Platform to display jokes and like them
+|    |   ├──admin/          # Access to user database
+|    ├──styles.css          # Global styles
+├──angular.json             # Angular CLI configuration
+├──package.json             # Project dependencies and scripts
+├──tsconfig.json            # TypeScript configuration
+├──README.md                # This file
+
 
 Backend/
 ├──models/       # Mongoose models
